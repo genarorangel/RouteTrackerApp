@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:places="clr-namespace:SearchPlaces;assembly=SearchPlaces"
+             xmlns:box="clr-namespace:dotMorten.Xamarin.Forms;assembly=dotMorten.Xamarin.Forms.AutoSuggestBox"
+             mc:Ignorable="d"
+             x:Class="RouteTrackerApp.EmployeePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <Label x:Name="LabelEmployee"
+                   Text=" "
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   TextColor="Black"
+                   FontSize="Large"/>
+            <Entry x:Name="ServiceEntry"
+                   Placeholder="Número do Serviço"
+                   Keyboard="Numeric"
+                   MaxLength="7"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   ClearButtonVisibility="WhileEditing" />
+            <box:AutoSuggestBox x:Name="SuggestBox" Margin="0,0,0,100"
+                                PlaceholderText="Endereço do Local do Serviço" 
+                                TextChanged="AutoSuggestBox_TextChanged"
+                                QuerySubmitted="AutoSuggestBox_QuerySubmitted"
+                                SuggestionChosen="AutoSuggestBox_SuggestionChosen"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"/>
+            <Button x:Name="StartButton"
+                    Text="PARTIDA"
+                    TextColor="White"
+                    BackgroundColor="Green"
+                    Clicked="StartButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RouteTrackerApp.ServicePage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Informações da Rota do Serviço"
+                   TextColor="DodgerBlue"
+                   FontSize="Title"/>
+            <Label x:Name ="ServiceNumberLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="StartingDateTimeLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="StartingPointLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="EndingDateTimeLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="EndingPointLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="ReturningLabel" 
+                   TextColor="Black"/>
+            <Label x:Name ="ReturngingPointLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="ExpectedKmLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="RealKMLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="KmTotalLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="ExceededKmLabel"
+                   TextColor="Black"/>
+            <Label x:Name ="ExpectedDuration"
+                   TextColor="Black"/>
+            <Label x:Name ="RealDuration"
+                   TextColor="Black"/>
+            <Button x:Name="routeButton"
+                    Text= "Visualizar Rota"
+                    Clicked="routeButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
