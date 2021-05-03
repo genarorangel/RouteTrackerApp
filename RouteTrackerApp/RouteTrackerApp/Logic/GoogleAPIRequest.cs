@@ -12,7 +12,7 @@ namespace RouteTrackerApp.Logic
     {
         //Essa classe utiliza um cliente HTTP e o plugin Newtonsoft.Json para desserializar a resposta em Json para a classe Route.Information criada
         private static string uri;
-        private static string key = "AIzaSyC5qcQOkjJVPumGPrGhlHinM49m-kiPk08";
+        private static string key = "PUT_YOUR_GOOGLE_KEY";
         public static string Key { get => key; set => key = value; }
         private static  int  radius = 200000;
 
